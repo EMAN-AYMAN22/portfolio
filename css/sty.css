@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+:root{
+--mainfont: Montserrat;
+--scondaryfont:Poppins;
+--maincolor:#1C1C1C;
+}
+.bg-dark-grey{
+    background-color: #1C1C1C;
+}
+.bg-grey{
+    background-color: #F7F7F7;
+}
+.bg-greeny{
+    background-color: #5b5b5b;
+}
+a.navbar-brand{
+    font-family: var(--mainfont);
+}
+a.nav-link{
+    font-family: var(--scondaryfont);
+    font-size: .875rem;
+}
+header h5{
+    font-family: var(--mainfont);
+    font-size: 3.125rem;
+    left: 50%;
+    top: 35%;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Poppins ;
+    src: url(../font/Poppins-Medium.ttf);
+}
+ nav .nav-link {
+    position: relative;
+  }
+
+nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white; /* اللون */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* عند Hover أو Active */
+  nav .nav-link.active::after {
+    width: 100%;
+  }
+
+  
+header{
+    background-image: linear-gradient(rgba(0, 0, 0,0.6) ,rgba(0, 0, 0,0.6)), url(../imgs/bg.jpg)  ;
+    background-size: cover;
+    margin-bottom: 150px;
+    background-attachment: fixed;
+}
+
+.animation{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 48px;
+    font-family: var(--mainfont);
+ }
+ .top-65{
+    top: 65%;
+ }
+.about{
+    margin-bottom: 100px  ;
+  
+}
+.hero{
+    position: relative;
+}
+ .hero::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left:-25px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+h3.fam-font{
+    font-family: var(--mainfont);
+    color: var(--maincolor);
+}
+.progress{
+ height: 50%;
+}
+.progress-bar span{
+    top: 50%;
+    right: 0%;
+    font-family: var(--scondaryfont);
+}
+.progress-bar p{
+    font-family: var(--mainfont);
+}
+
+button.btn1{
+    background-color: var(--maincolor);
+    font-family: var(--mainfont) ;
+    a{
+        color: #fff;
+    }
+    transition: all 0.5s;
+
+}
+button.btn2{
+    background-color: transparent;
+    font-family: var(--mainfont) ;
+    font-family: var(--mainfont);
+    a{
+        color: var(--maincolor);
+    }
+    transition: all 0.5s;
+}
+.btn1:hover{
+    background: transparent;
+    a{
+        color: var(--maincolor);
+      }
+    
+}
+.btn2:hover{
+    background: var(--maincolor);
+    a{
+        color: #fff;
+      }
+    
+}
+
+
+
+
+.top-20{
+    top: 20%;
+  }
+
+  
+  .fs-p{
+    font-size: .875rem;
+    font-weight: 500;
+  }
+ 
+  
+.f-fam{
+    font-family: var(--mainfont);
+}
+/* .services h1{
+    position: relative;
+} */
+ article h1:after{
+content: '';
+width:100%;
+height: 40px;
+position: absolute;
+top:70%;
+left: 50%;
+transform: translate(-50% ,-50%);
+background-image: url(../imgs/dots.png);
+background-repeat: repeat;
+ z-index: -1;
+}
+
+.color-hover {
+color: #F4F4F4;
+transition: all 0.5s 0s;
+
+}
+.overlay2{
+    width: 97%;
+    height: 97%;
+    position: absolute;
+    bottom:0%;
+    left: 1%;
+    top: 1%;
+    right:1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    /* transform: translateY(21.875rem); */
+    transition: all 0.3s 0s ease-in;
+  }
+  .photo:hover .overlay2{
+    opacity: 1;
+    /* transform: translateY(0); */
+  
+  }
+  .icon-hover-W {
+    color: black;
+    transition: all 0s 0s;
+  }
+  .icon-hover2-W{
+        color: white;
+        transition: all 0s 0s; 
+    }
+  .hov-icon:hover .icon-hover2-W {
+        color: black;
+    
+    }
+  .hov-icon:hover .icon-hover-W{
+    color: white;
+    border: black solid 1px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    }
+.color-hover2{
+    color: black;
+    transition: all 0.5s 0s;
+
+}
+.cart:hover .color-hover2 {
+    color: #fff;
+
+}
+
+.cart:hover .color-hover{
+color: black;
+}
+
+.w-10{
+    width: 10%;
+  }
+  .hhh:hover .color-hover2 {
+    color: #fff;
+
+}
+
+.hhh:hover .color-hover{
+color: black;
+}
+  .fs-t{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .carousel-indicators [data-bs-target]{
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: #869791;
+    }
+    .overlay{
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        inset: 5%;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: all 0.5s 0s;
+      }
+      .card:hover .overlay{
+        opacity: 1;
+        transform:rotateZ(90deg);
+        transform:rotateX(360deg);
+        transform:rotateY(360deg);
+      
+      }
+      .card picture img{
+        transition: all 0.5s 0s;
+      }
+      .card:hover img {
+        transform: scale(1.2);
+      }
+      .icon-hover {
+        color: black;
+        transition: all 0.5s 0s;
+      }
+     
+      .icon-hover2{
+            color: white; 
+            transition: all 0.5s 0s; 
+        }
+      .ho-icon:hover .icon-hover2 {
+            color: black;
+        
+        }
+      .ho-icon:hover .icon-hover{
+        color: white;
+       
+        }
+        
+@media screen and (max-width :992px) {
+ article.mar-top{
+    margin-top: 50px;
+}
+    
+}
